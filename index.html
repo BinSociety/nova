@@ -1129,7 +1129,7 @@
                 return sum + (prod.precio * item.cantidad);
             }, 0);
 
-            text += `*Total: ${total.toLocaleString('es-PY')} Gs*\n\nMis datos:\n- Nombre: \n- Dirección: \n- Teléfono: \n\n¿Podrían confirmarme la disponibilidad y el tiempo de envío?`;
+            text += `*Total: ${total.toLocaleString('es-PY')} Gs*\n\n¿Podrían confirmarme la disponibilidad y el tiempo de envío?`;
 
             const url = `https://wa.me/${phone}?text=${encodeURIComponent(text)}`;
             
@@ -1292,4 +1292,5 @@
         window.onload = init;
     </script>
 </body>
+
 </html>
